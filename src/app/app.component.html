@@ -1,0 +1,26 @@
+
+<div style="text-align:center">
+
+  <mat-tab-group>
+
+    <mat-tab label="First Task"> 
+        <form class="example-form">
+          <mat-form-field class="full-width">
+            <input matInput #something placeholder="write something in the input field to change this label" value="">
+          </mat-form-field>
+        </form>
+          
+        <label class="full-width">{{something.value}}</label>
+    </mat-tab>
+
+    <mat-tab label="Second Task"> 
+      Content of the second task
+    </mat-tab>
+
+  </mat-tab-group>
+
+</div>
+
+
+
+<router-outlet></router-outlet>
